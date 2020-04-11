@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+<div id="app">
     <header>
+        {{ message }}
         <div class="logo">E-shop</div>
         <div class="cart">
             <form action="#" class="search-form">
@@ -23,13 +25,11 @@
     <main>
         <div class="products"></div>
     </main>
+</div>
+    
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-    <script src="js/main.js">
-        const products = []
-        let selector = document.querySelector('.products');
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,9 +1,52 @@
-//заглушки (имитация базы данных)
 const API_URL ='https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 // /catalogData.json – получить список товаров;
 // /getBasket.json – получить содержимое корзины;
 // /addToBasket.json – добавить товар в корзину;
 // /deleteFromBasket.json – удалить товар из корзины.
+
+// let app = new Vue ({
+//     el: '#app',
+//     data: {
+//         //данные, формируемые/изменяемые внутри компонента
+//         url: 'https://jsonplaceholder.typicode.com/comments',
+//         comments: [],
+//         name: 'Ivan Petrov',
+//         text: 'Some text',
+//         email: 'example@yandex.com',
+//         firstShown: true,
+//         limit: 10,
+//     },
+//     methods: {
+//         // а ля "функции"
+//         getJSON (url) {
+//             return fetch (url)
+//                     .then (d => d.json ())
+//         },
+//         toggleFirstPost () {
+//             this.firstShown = !this.firstShown
+//         },
+//         reload () {
+//             this.getJSON (this.url + `?_limit=${this.limit}`)
+//                 .then (data => {this.comments = data})
+//         }
+//     },
+//     computed: {
+//         toggleBtnText () {
+//             return this.firstShown ? 'Скрыть' : 'Показать'
+//         }
+//         // вычисляемые значения (а ля ф-ции, возвращающие рез-т)
+//     },
+//     // "хуки жизненного цикла" (а ля события, но касающиеся вью-компонента)
+//     mounted () {
+//         this.getJSON (this.url + `?_limit=${this.limit}`)
+//             .then (data => {this.comments = data})
+//             //.finally (() => {console.log (this.comments)})
+//     },
+//     created () {
+//         console.log ('Я создан, но еще не появился')
+//     }
+// })
+
 
 const image = 'https://placehold.it/200x150';
 const cartImage = 'https://placehold.it/100x80';
